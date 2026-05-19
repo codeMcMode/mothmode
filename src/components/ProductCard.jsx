@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ category, title, description, status, primaryButton, secondaryButton }) => {
+const ProductCard = ({ category, title, description, status, primaryButton, primaryButtonLink, secondaryButton }) => {
   return (
     <div className="glass-card p-8 flex flex-col h-full group">
       <div className="flex items-center justify-between mb-6">
@@ -16,11 +16,15 @@ const ProductCard = ({ category, title, description, status, primaryButton, seco
       </p>
       
       <div className="flex items-center gap-3 mt-auto">
-        {primaryButton && (
+        {primaryButton && primaryButtonLink ? (
+          <a href={primaryButtonLink} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 rounded-lg bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors inline-block">
+            {primaryButton}
+          </a>
+        ) : primaryButton ? (
           <button className="px-5 py-2.5 rounded-lg bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors">
             {primaryButton}
           </button>
-        )}
+        ) : null}
         {secondaryButton && (
           <button className="px-5 py-2.5 rounded-lg bg-transparent text-moth-muted text-sm font-medium hover:text-white transition-colors">
             {secondaryButton}
