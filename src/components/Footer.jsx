@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { COMPANY, companyRegistrationLine } from '../constants/company';
 
 const Footer = () => {
@@ -52,8 +51,8 @@ const Footer = () => {
               © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-moth-muted">
-              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
