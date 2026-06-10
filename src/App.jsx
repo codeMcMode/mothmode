@@ -1,25 +1,16 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import SoftwareSection from './components/SoftwareSection';
-import VSTSection from './components/VSTSection';
-import CloudApps from './components/CloudApps';
-import About from './components/About';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
-    <div className="bg-[#0a0a0c] min-h-screen text-[#e2e2e5] font-sans selection:bg-white/20 selection:text-white">
-      <Header />
-      <main>
-        <Hero />
-        <SoftwareSection />
-        <VSTSection />
-        <CloudApps />
-        <About />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfService />} />
+    </Routes>
   );
 }
 

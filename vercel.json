@@ -1,0 +1,6 @@
+{
+  "name": "mothmode",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}

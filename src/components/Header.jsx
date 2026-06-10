@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -6,12 +7,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0c]/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img src="/mothmode_logo.png" alt="Moth Mode Logo" className="h-10 w-auto" />
-        </a>
+        </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm text-moth-muted hover:text-white transition-colors">Home</a>
+          <Link to="/" className="text-sm text-moth-muted hover:text-white transition-colors">Home</Link>
           <a href="#vst-plugins" className="text-sm text-moth-muted hover:text-white transition-colors">VST Plugins</a>
           <a href="#cloud-apps" className="text-sm text-moth-muted hover:text-white transition-colors">Cloud Apps</a>
           <a href="#about" className="text-sm text-moth-muted hover:text-white transition-colors">About</a>
@@ -47,7 +48,7 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 right-0 bg-[#0a0a0c] border-b border-white/5 p-6 shadow-2xl flex flex-col gap-6">
           <nav className="flex flex-col gap-4">
-            <a href="#" onClick={() => setMobileMenuOpen(false)} className="text-base text-moth-muted hover:text-white transition-colors block py-2">Home</a>
+            <Link to="/" onClick={() => setMobileMenuOpen(false)} className="text-base text-moth-muted hover:text-white transition-colors block py-2">Home</Link>
             <a href="#vst-plugins" onClick={() => setMobileMenuOpen(false)} className="text-base text-moth-muted hover:text-white transition-colors block py-2">VST Plugins</a>
             <a href="#cloud-apps" onClick={() => setMobileMenuOpen(false)} className="text-base text-moth-muted hover:text-white transition-colors block py-2">Cloud Apps</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-base text-moth-muted hover:text-white transition-colors block py-2">About</a>
