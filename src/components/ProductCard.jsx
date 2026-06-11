@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ category, title, description, status, primaryButton, primaryButtonLink, secondaryButton }) => {
+const ProductCard = ({ category, title, description, status, logo, logoAlt, primaryButton, primaryButtonLink, secondaryButton }) => {
   return (
     <div className="glass-card p-8 flex flex-col h-full group">
       <div className="flex items-center justify-between mb-6">
@@ -9,8 +9,16 @@ const ProductCard = ({ category, title, description, status, primaryButton, prim
           {status}
         </span>
       </div>
+
+      {logo && (
+        <img
+          src={logo}
+          alt={logoAlt || title}
+          className="h-14 w-auto mb-5 object-contain object-left"
+        />
+      )}
       
-      <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
+      <h3 className={`font-bold text-white mb-4 ${logo ? 'sr-only' : 'text-2xl'}`}>{title}</h3>
       <p className="text-moth-muted leading-relaxed mb-8 flex-grow">
         {description}
       </p>

@@ -11,7 +11,14 @@ const CloudApps = () => {
             We believe the future of production connects the local DAW to the web seamlessly.
           </p>
           <div className="glass-card p-6 border-l-2 border-l-white/40">
-            <h4 className="text-white font-medium mb-2">MixMemora Cloud</h4>
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src="/mixmemora_logo.png"
+                alt="MixMemora logo"
+                className="h-8 w-auto object-contain"
+              />
+              <h4 className="text-white font-medium">MixMemora Cloud</h4>
+            </div>
             <p className="text-moth-muted text-sm leading-relaxed">
               Planned as the first cloud companion app. It will sync with the MixMemora VST, allowing you to review your track notes, references, and feedback from anywhere.
             </p>

@@ -16,6 +16,8 @@ const SoftwareSection = () => {
           <ProductCard 
             category="VST Plugin / Cloud Companion"
             title="MixMemora"
+            logo="/mixmemora_logo.png"
+            logoAlt="MixMemora logo"
             description="A creative memory layer for producers — store track notes, references, audio ideas and feedback around your music projects."
             status="In development"
             primaryButton="Learn More"

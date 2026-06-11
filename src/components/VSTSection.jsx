@@ -14,10 +14,15 @@ const VSTSection = () => {
         <div className="glass-card overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
+              <img
+                src="/mixmemora_logo.png"
+                alt="MixMemora logo"
+                className="h-16 w-auto mb-6 object-contain object-left"
+              />
               <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/80 w-max mb-6">
                 In development
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">MixMemora</h3>
+              <h3 className="sr-only">MixMemora</h3>
               <p className="text-moth-muted text-lg leading-relaxed mb-8">
                 MixMemora is a note, reference and memory plugin for music producers. It helps keep track ideas, feedback, creative decisions, audio references and production notes inside the creative workflow.
               </p>
