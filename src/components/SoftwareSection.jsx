@@ -18,11 +18,10 @@ const SoftwareSection = () => {
             title="MixMemora"
             logo="/mixmemora_logo.png"
             logoAlt="MixMemora logo"
-            description="A creative memory layer for producers — store track notes, references, audio ideas and feedback around your music projects."
-            status="In development"
-            primaryButton="Learn More"
+            description="A creative memory layer for producers: store track notes, references, audio ideas and feedback around your music projects. Free VST3 for Windows and macOS."
+            status="Now live"
+            primaryButton="Download Free"
             primaryButtonLink="https://mixmemora.com"
-            secondaryButton="Coming Soon"
           />
           <ProductCard 
             category="Production Utilities"

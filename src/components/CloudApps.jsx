@@ -7,7 +7,7 @@ const CloudApps = () => {
         <div className="lg:w-1/2">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Cloud apps for creative workflows</h2>
           <p className="text-moth-muted text-lg leading-relaxed mb-8">
-            Moth Mode will also build companion cloud apps for sharing, feedback, collaboration and project memory. 
+            Moth Mode builds companion cloud apps for sharing, feedback, collaboration and project memory. 
             We believe the future of production connects the local DAW to the web seamlessly.
           </p>
           <div className="glass-card p-6 border-l-2 border-l-white/40">
@@ -19,9 +19,17 @@ const CloudApps = () => {
               />
               <h4 className="text-white font-medium">MixMemora Cloud</h4>
             </div>
-            <p className="text-moth-muted text-sm leading-relaxed">
-              Planned as the first cloud companion app. It will sync with the MixMemora VST, allowing you to review your track notes, references, and feedback from anywhere.
+            <p className="text-moth-muted text-sm leading-relaxed mb-4">
+              Our first cloud companion app is now live. It syncs with the MixMemora VST, so you can review your track notes, references, and feedback from anywhere, and invite collaborators to shared projects.
             </p>
+            <a
+              href="https://mixmemora.com/cloud"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 rounded-lg bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors"
+            >
+              Open MixMemora Cloud
+            </a>
           </div>
         </div>
         
